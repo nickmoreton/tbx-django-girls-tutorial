@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 a,
+h2 a {
+  color: #c25100;
+  display: block;
+}
+
+header {
+  margin-bottom: 1em;
+  background-color: #c25100;
+  padding: 1em;
+}
+
+header h1 {
+  font-size: 3em;
+  font-family: "Lobster";
+}
+
+.btn-back {
+  color: black;
+  background-color: lightgrey;
+  font-size: 2em;
+  padding: 0 1em;
+  margin: 0;
+  display: inline-block;
+}
+
+header a {
+  color: white;
+}
+
+.btn-back:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 1px black;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    border-radius: 0 0 1em 1em;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 5em;
+    opacity: 0.8;
+    text-shadow: 1px 1px black;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  article.post-detail {
+    display: block;
+  }
+
+  article.post-detail h2 {
+    font-family: "Lobster";
+    font-size: 4em;
+    opacity: 0.75;
+  }
+
+  article time {
+    flex-basis: 100%;
+    /* transform: translateY(3em); */
+    opacity: 0.5;
+    text-align: right;
+  }
+
+  article h2 {
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+  }
+
+  article h2 a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  article h2 a:hover {
+    transform: scale(1.2);
+    transform: translateX(0.25em);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    background-image: linear-gradient(lightgrey, darkgrey);
+    color: black;
+    border-radius: 1em;
+  }
+
+  article p {
+    flex: 0 0 60%;
+    margin-left: auto;
+  }
+}
